@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">手机新浪网</string>
+    <string name="refresh">刷新页面</string>
+    <string name="title_activity_view">手机新浪网</string>
+    <string name="clearCache">清理缓存</string>
+    <string name="tips">网速不给力哦！！！</string>
+    <string name="loading">加载中...</string>
+    <string name="loading_speed">努力加载中......</string>
+
+</resources>

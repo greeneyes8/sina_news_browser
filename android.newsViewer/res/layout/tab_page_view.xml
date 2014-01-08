@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:id="@+id/nwv"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+       />
+<LinearLayout 
+   		android:id="@+id/loading"
+      	android:layout_width="match_parent"
+   		android:layout_height="match_parent"
+   		android:gravity="center"
+   		android:visibility="gone"
+   		android:background="#ffffff"
+   		android:orientation="vertical"
+    >
+    <ProgressBar
+        android:id="@+id/mloading_bar"
+      	android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:layout_gravity="center"
+   		android:indeterminateDuration="200"
+   		android:indeterminateDrawable="@drawable/custom_progress_items"
+   		android:background="@drawable/loading_bar"
+   		style="@android:style/Widget.ProgressBar"
+   		/>
+    <TextView
+   	android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:text="@string/loading"
+    android:layout_marginTop="6dp"
+    android:layout_marginLeft="6dp"
+    />
+    </LinearLayout>
+    
+   <LinearLayout 
+    android:id="@+id/loading_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:visibility="gone"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <ImageView
+      android:layout_width="wrap_content"
+  	  android:layout_height="wrap_content" 
+  	  android:src="@drawable/loading"/>
+    <TextView
+      android:layout_width="wrap_content"
+  	  android:layout_height="wrap_content" 
+  	  android:text="@string/tips"
+  	  android:layout_marginLeft="22dp"
+  	  android:textColor="#444444"/>
+
+</LinearLayout>
+    
+
+</FrameLayout>

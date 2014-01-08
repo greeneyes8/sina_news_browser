@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/menu"
+    >
+    <com.jeremyfeinstein.slidingmenu.lib.SlidingMenu
+	    xmlns:sliding="http://schemas.android.com/apk/res-auto"
+	    android:id="@+id/slidingmenulayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    sliding:fadeEnabled="true"
+	    sliding:fadeDegree="0.35"
+	    sliding:selectorEnabled="true" >
+	    <ListView 
+	    android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="#3D3739"
+        android:divider="@drawable/night_biz_main_tab_divider"
+        android:dividerHeight="1px"
+        />
+	    </com.jeremyfeinstein.slidingmenu.lib.SlidingMenu>
+</LinearLayout>
